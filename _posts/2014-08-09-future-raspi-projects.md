@@ -51,3 +51,6 @@ Raspberry Pi.
     on the Pi! No idea what I would actually do with it, but as I already have
     a Kinect, this is tempting to play around with just because it doesn't 
     need any expenditure.
+
+See [this Reddit post](http://www.reddit.com/r/raspberry_pi/comments/2cw47l/unofficial_what_canshould_i_do_with_a_pi_help/)
+for some more ideas.
