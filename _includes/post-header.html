@@ -1,0 +1,12 @@
+<header>
+  <h1 class="post-title">
+    <a href="{{ [pagevar].url }}">
+      {{ [pagevar].title }}
+    </a>
+  </h1>
+  <span class="post-date">{{ [pagevar].date | date_to_string }}
+    <span class="blog_post_categories">
+      | tags: {% for tag in [pagevar].tags %}{% include tags.html %}{% endfor %}
+    </span>
+  </span> 
+</header>
