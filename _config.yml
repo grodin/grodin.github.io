@@ -1,9 +1,7 @@
 # Dependencies
 markdown:         kramdown
-# ~ redcarpet:
-  # ~ extensions: ["tables"]
 
-pygments:         true
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
@@ -11,8 +9,6 @@ permalink:        pretty
 # Setup
 title:            Joseph Cooper's devblog
 tagline:          'Android, Haskell, Raspberry Pi and whatever else'
-#url:              http://www.joshualande.com
-#shorturl:         joshualande.com
 
 author:
   name:           'Joseph Cooper'
@@ -23,8 +19,6 @@ paginate:         4
 # Custom vars
 version:          1.0.0
 
-#github:
-#  repo:           github.com/joshualande/joshualande.github.io
 
 # This is the list of pages to incldue in the header of the website.
 pages_list:       
