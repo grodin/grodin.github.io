@@ -6,7 +6,7 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    {% assign pagevar = 'post' %}{% include post-header.html %}
+    {% include post-header.html pagevar='post' %}
 
     {{ post.content }}
   </div>

@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
   <div class="post">
-    {% assign pagevar = 'page' %}{% include post-header.html %}
+    {% include post-header.html pagevar='page'%}
     {{ content }}
   </div>
 </article>
