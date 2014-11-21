@@ -1,5 +1,8 @@
 # Dependencies
-markdown:         kramdown
+markdown:         redcarpet
+redcarpet:
+    extensions: ['smart', 'no_intra_emphasis', 'tables', 'strikethrough', 'superscript']
+
 
 highlighter:      pygments
 
