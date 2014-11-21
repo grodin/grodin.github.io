@@ -6,15 +6,16 @@
 			"path": "."
 		}
 	],
-
 	"settings":
 	{
-		"rulers":[80],
-
-	    "Jekyll":
-	    {
-	        "posts_path": "/home/jsc/blog/github/grodin.github.com/_posts",
-	        "drafts_path": "/home/jsc/blog/github/grodin.github.com/_drafts",
-	    }
+		"Jekyll":
+		{
+			"drafts_path": "/home/jsc/blog/github/grodin.github.com/_drafts",
+			"posts_path": "/home/jsc/blog/github/grodin.github.com/_posts"
+		},
+		"rulers":
+		[
+			80
+		]
 	}
 }

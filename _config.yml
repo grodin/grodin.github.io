@@ -7,7 +7,7 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Joseph Cooper's devblog
+title:            Joseph Cooper's Devblog
 tagline:          'Android, Haskell, Raspberry Pi and whatever else'
 
 author:
@@ -17,17 +17,21 @@ author:
 paginate:         4
 
 # Custom vars
-version:          1.0.0
+version:          1.1.0
 
+baseurl: '/'
 
 # This is the list of pages to incldue in the header of the website.
-pages_list:       
+pages_list:
   About: '/about/'
   Archive: '/archive/'
   Feed: '/atom.xml'
 
-# Allow URL Redirects: 
+# Allow URL Redirects:
 #  * https://help.github.com/articles/redirects-on-github-pages
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+
+# list of files to exclude from site generation
+exclude: [README.*, LICENSE.*, blog.github.sublime*, Rakefile*, Gemfile*]
