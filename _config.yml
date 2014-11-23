@@ -11,7 +11,7 @@ permalink:        pretty
 
 # Setup
 title:            "Joseph Cooper"
-description:      "Personal website and devblog"
+description:      "Personal website and blog"
 tagline:          "Android, Haskell, Raspberry Pi and whatever else"
 
 author:
@@ -19,6 +19,8 @@ author:
 url:              "http://grodin.github.io"
 baseurl:          "/"
 paginate:         4
+paginate_path:    "blog/page:num"
+baseurl: '/'
 
 # Custom vars
 version:          1.2.1
