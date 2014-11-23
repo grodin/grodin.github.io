@@ -17,7 +17,7 @@ tagline:          "Android, Haskell, Raspberry Pi and whatever else"
 author:
   name:           'Joseph Cooper'
 url:              "http://grodin.github.io"
-
+baseurl:          "/"
 paginate:         4
 
 # Custom vars
