@@ -2,8 +2,15 @@
 layout: default
 ---
 <article>
-  <div class="post">
-    {% include post-header.html pagevar='page'%}
-    {{ content }}
-  </div>
-</article>
+
+  {% if page.isdraft %}
+  <div class="post draft">
+    {% else %}
+    <div class="post">
+      {% endif %}
+
+      {% include post-header.html pagevar='page'%}
+      {{ content }}
+
+    </div>
+  </article>

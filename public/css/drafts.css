@@ -1,0 +1,15 @@
+/*
+Highlight draft posts
+*/
+
+.draft {
+  background-color: rgba(128,128,156,0.05);
+}
+.draft h1.post-title::after, .draft h1.post-title::before {
+  content: "-=- Draft Post -=-";
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: red;
+  vertical-align: 25%;
+}

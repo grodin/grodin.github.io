@@ -5,25 +5,29 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
-    {% include post-header.html pagevar='post' %}
+    {% if post.isdraft %}
+        <div class="post draft">
+    {% else %}
+        <div class="post">
+    {% endif %}
+      {% include post-header.html pagevar='post' %}
 
-    {{ post.content }}
-  </div>
+      {{ post.content }}
+    </div>
   {% endfor %}
 </div>
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}/">Older</a>
+    <a class="pagination-item older" href="/blog/page{{paginator.next_page}}/">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
+      <a class="pagination-item newer" href="/blog">Newer</a>
     {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}/">Newer</a>
+      <a class="pagination-item newer" href="/blog/page{{paginator.previous_page}}/">Newer</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Newer</span>

@@ -10,23 +10,30 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Joseph Cooper's Devblog
-tagline:          'Android, Haskell, Raspberry Pi and whatever else'
+title:            "Joseph Cooper"
+description:      "Personal website and devblog"
+tagline:          "Android, Haskell, Raspberry Pi and whatever else"
 
 author:
   name:           'Joseph Cooper'
-  #url:            https://
+url:              "http://grodin.github.io"
 
 paginate:         4
 
 # Custom vars
-version:          1.1.0
+version:          1.2.1
 
-baseurl: '/'
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # applies only to files with blog in their path
+      type: "drafts" # applies only to draft posts
+    values:
+      isdraft: true
 
 # This is the list of pages to incldue in the header of the website.
 pages_list:
-  About: '/about/'
   Archive: '/archive/'
   Feed: '/atom.xml'
 
