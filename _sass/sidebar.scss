@@ -1,0 +1,120 @@
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+@import "colours";
+
+.sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: $sidebar-fgcolor-alt;
+  background-color: $sidebar-bgcolor;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16.5rem;
+    text-align: left;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: $sidebar-fgcolor;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: $sidebar-fgcolor;
+  margin-top: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+@media (min-width: 48em) {
+  .sidebar-about h1 {
+    font-size: 3rem;
+  }
+}
+
+/*.sidebar-about h1 a:hover {
+  text-decoration: none;
+}
+*/
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 0;
+}
+@media (min-width: 48em) {
+  .sidebar-nav {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.sidebar-nav-item {
+  display: inline;
+  line-height: 1;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+@media (min-width: 48em) {
+  .sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
+
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+.sidebar-nav .version {
+  font-size: 0.8rem;
+  display: none;
+}
+@media (min-width: 48em) {
+  .sidebar-nav .version {
+    display: inline;
+  }
+}
+
+.sidebar-copyright {
+  display: none;
+}
+@media (min-width: 48em) {
+  .sidebar-copyright {
+    display: inline;
+  }
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}
