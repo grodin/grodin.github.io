@@ -1,20 +1,53 @@
 @import "colours";
 
-#profile-links {
-    a {
+
+.headshot {
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 48em) {
+    .headshot {
         display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+#profile-links {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    a {
+        display: inline-block;
         line-height: 2em;
         width: 2em;
         height: 2em;
-        margin: 0px auto;
+        margin: auto 0.25em auto 0.25em;
         background-color: lighten($link-color,15%);
         color: #FFF;
         text-align: center;
-        font-size: 1.75em;
+        font-size: 1.33em;
         border-radius: 50%;
     }
 
     a:hover {
         background-color: $link-color;
     }
+}
+
+@media (min-width: 48em) {
+    #profile-links {
+        margin-left: 0px;
+        margin-right: 0px;
+        a {
+            font-size: 1.75em;
+        }
+    }
+
 }

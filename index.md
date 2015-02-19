@@ -2,7 +2,7 @@
 layout: home
 title: Home
 ---
-![My smiling face!](/img/portrait.png)
+<img class="headshot" src="/img/portrait.png" title="A photo of me"/>
 I am currently an indie [Android](developer.android.com/) developer, with one app released (link to
 come). I plan to find a job somewhere instead of being independent soon.
 
