@@ -6,6 +6,10 @@ redcarpet:
 
 highlighter:      pygments
 
+# Sass options
+sass:
+  style: compressed
+
 # Permalinks
 permalink:        pretty
 
