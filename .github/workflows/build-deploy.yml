@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Zola
-        uses: taiki-e/install-action@v2.27
+        uses: taiki-e/install-action@v2
         with:
           tool: zola@0.18
           
@@ -28,7 +28,7 @@ jobs:
         run: zola build
 
       - name: upload artifact
-        uses: actions/upload-pages-artifactr@v1
+        uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
 
