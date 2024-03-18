@@ -14,11 +14,6 @@ body{
 	background-color: $dark_bg;
 }
 
-// h1,h2 {
-// 	margin-top: 1em;
-// 	padding-top: 1em;
-// }
-
 h1,h2,strong {
 	color: $dark_primary_fg_emphasis;
 }
@@ -26,6 +21,8 @@ h1,h2,strong {
 
 pre {
   padding: 1em;
+  max-width: fit-content;
+  overflow-x: scroll;
 }
 
 a {
