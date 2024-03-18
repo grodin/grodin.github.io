@@ -1,5 +1,5 @@
 +++
-title = "About this site and author"
+title = "About"
 date = 2024-03-18
 path = "about"
 toc = []
