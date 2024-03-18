@@ -44,7 +44,17 @@ header.post__header {
 
 header nav {
 	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	min-width: fit-content;
 }
+
+@media (width <= 360px) {
+	header nav {
+		flex-direction: column;
+	}
+}
+
 
 header .logo {
 	font-size: 1.5em;
