@@ -2,9 +2,9 @@ name: Build and deploy GH Pages
 
 on:
   push:
-    branches: ["main"]      
+    branches: ["main"]
   workflow_dispatch:
-  
+
 permissions:
   contents: read
   pages: write
@@ -18,12 +18,12 @@ jobs:
         uses: taiki-e/install-action@v2
         with:
           tool: zola@0.18
-          
+
       - name: checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          
+
       - name: build with Zola
         run: zola build
 
@@ -41,4 +41,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
