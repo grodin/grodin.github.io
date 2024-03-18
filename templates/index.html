@@ -39,13 +39,13 @@
 
             <header id="header">
                 <nav class="menu">
-                <div class="logo"><a href="{{ config.base_url }}">{{ config.title }}</a></div>
+                <div class="logo"><a href="/">{{ config.title }}</a></div>
                 {% for item in config.extra.nav_menu %}
-                  <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                  <a href="{{ item.url | replace(from="$BASE_URL", to='') }}">
                       {{ item.name }}
                   </a>
                 {% endfor %}
-                    
+
                 </nav>
             </header>
 
