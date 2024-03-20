@@ -16,6 +16,6 @@ Apart from techy things, I enjoy cycling (mostly off-road these days), hill walk
 No doubt I'll write a post about how I built this blog soon, as that seems to be par for the course with devblogs.
 
 Why the name "onemanbaboon"? Because I misread the name of the blog [One Man Doom][onemandoom] one day as "One Man Baboon",
-liked the sound of and bought the domain. Not the best reason, nor the worst, but at least it's a reason!
+liked the sound of it and bought the domain. Not the best reason, nor the worst, but at least it's a reason!
 
 [onemandoom]: https://onemandoom.blogspot.com/
