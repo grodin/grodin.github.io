@@ -3,6 +3,7 @@ name: Build and deploy GH Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -28,6 +29,7 @@ jobs:
         run: zola build
 
       - name: upload artifact
+        if: ${{ github.event_name == 'pull_request' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
